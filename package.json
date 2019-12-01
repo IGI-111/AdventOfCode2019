@@ -1,0 +1,12 @@
+{
+  "name": "AdventOfCode2019",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:IGI-111/AdventOfCode2019.git",
+  "author": "IGI-111 <igi-111@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "prettier": "1.19.1"
+  }
+}
