@@ -9,7 +9,10 @@ const integers = input.split(',').map(x => parseInt(x, 10))
 
 console.log(run(12, 2, integers))
 
-const found = findOutput(19690720, integers)!
+const found = findOutput(19690720, integers)
+if (!found) {
+  throw new Error('No noun and verb combination can give output')
+}
 console.log(100 * found.noun + found.verb)
 
 function findOutput(
