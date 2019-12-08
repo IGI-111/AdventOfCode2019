@@ -2,12 +2,49 @@
 # yarn lockfile v1
 
 
+"@types/bluebird@^3.0.37":
+  version "3.5.29"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.29.tgz#7cd933c902c4fc83046517a1bef973886d00bdb6"
+  integrity sha512-kmVtnxTuUuhCET669irqQmPAez4KFnFVKvpleVRyfC3g+SHD1hIkFZcWLim9BVcwUBLO59o8VZE4yGCmTif8Yw==
+
 "@types/node@^12.12.14":
   version "12.12.14"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
   integrity sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
 
+"@types/transducers-js@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@types/transducers-js/-/transducers-js-0.0.2.tgz#cc06bdee0479db53c4c366b213be8271a833cc25"
+  integrity sha1-zAa97gR521PEw2ayE76CcagzzCU=
+  dependencies:
+    immutable "^3.8.1"
+
+bluebird@^3.4.7:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
+  integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
+
+immutable@^3.8.1:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+  integrity sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
+
 prettier@1.19.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
+
+transducers-js@^0.4.174:
+  version "0.4.174"
+  resolved "https://registry.yarnpkg.com/transducers-js/-/transducers-js-0.4.174.tgz#d5862c10eff4be3d3322abf6bb742e30f1bb6fc4"
+  integrity sha1-1YYsEO/0vj0zIqv2u3QuMPG7b8Q=
+
+ts-csp@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/ts-csp/-/ts-csp-0.9.0.tgz#9db27c8e940d6c14d78691e8ce2fdf3bf0626809"
+  integrity sha512-o4I6uhXf7++l8/Ef80ixPCWJafulq88LsRLpQMcLnSrjzTeOpguxHS7tV48XBsN3hs3EectPTQW2BTQ7xIH/yg==
+  dependencies:
+    "@types/bluebird" "^3.0.37"
+    "@types/transducers-js" "0.0.2"
+    bluebird "^3.4.7"
+    transducers-js "^0.4.174"
