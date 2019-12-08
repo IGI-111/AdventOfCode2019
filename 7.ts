@@ -7,6 +7,7 @@ import { Channel } from 'ts-csp'
     .trim()
 
   const program = input.split(',').map(x => parseInt(x, 10))
+
   const maxSignal = (
     await Promise.all(
       permutations([0, 1, 2, 3, 4]).map(async phaseSettings => {
@@ -25,8 +26,9 @@ import { Channel } from 'ts-csp'
       permutations([5, 6, 7, 8, 9]).map(async phaseSettings => {
         const channels: Channel[] = []
         for (let i = 0; i < 5; ++i) {
-          channels.push(new Channel())
-          channels[i].put(phaseSettings[i])
+          const c = new Channel()
+          c.put(phaseSettings[i])
+          channels.push(c)
         }
         const amplifiers = phaseSettings.map((_, i) =>
           runFeedbackAmplifier(program, channels[i], channels[(i + 5 + 1) % 5]),
